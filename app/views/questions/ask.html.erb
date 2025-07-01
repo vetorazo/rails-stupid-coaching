@@ -1,0 +1,14 @@
+<div class="conatiner min-vh-100 d-flex flex-column justify-content-center align-items-center bg-dark text-light">
+  <div class="card shadow-lg p-4 bg-secondary text-light" style="max-width: 400px; width: 100%;">
+  <h2 class="mb-4 text-center">Ask the Stupid Coach</h2>
+  <form action="/answer" method="get" data-turbo="false">
+  <div class="mb-3">
+    <input type="text" name="ask" value="<%= params[:ask] %>"  class="form-control bg-dark text-light border-0 shadow-sm"  placeholder="Ask anything">
+  </div>
+  <div class="d-grid">
+    <button type="submit" class="btn btn-primary btn-lg shadow">Ask!</button>
+  </div>
+  </form>
+
+  </div>
+</div>
